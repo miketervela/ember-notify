@@ -72,8 +72,8 @@ export default Component.extend({
       if (this.isHovering()) {
         return this.run.later(() =>
          {
-           if (!this.get('isDestroyed') {
-             this.send('closeIntent')
+           if (!this.get('isDestroyed')) {
+             this.send('closeIntent');
            }
          }, 100);
       }
